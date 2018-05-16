@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import test from '@/pages/test'
+import carLicenseentry from '@/pages/carLicenseentry'
+import payInfo from '@/pages/payInfo'
 import test1 from '@/pages/test1'
 import test2 from '@/pages/test2'
 
@@ -11,10 +12,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'test',
-      component: test,
+      name: 'carLicenseentry',
+      component: carLicenseentry,
       meta: {
-        title: '首页',
+        title: '车牌录入',
+      }
+    },
+    {
+      path: '/payInfo',
+      name: 'payInfo',
+      component: payInfo,
+      meta: {
+        title: '支付详情',
       }
     },
     {
